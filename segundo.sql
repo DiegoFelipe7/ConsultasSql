@@ -10,7 +10,7 @@ WHERE client.client_number=1058788349  AND type_of_document.document_name="cc";
 SELECT product.product_nombre , supplier.supplier_name  FROM product_sold
 INNER JOIN product ON product_sold.id_product = product.id_product
 INNER JOIN supplier ON product_sold.id_supplier=supplier.id_supplier
-WHERE product.product_nombre="Jabon";
+WHERE product.product_nombre="Mortadela";
 
 SELECT product.product_nombre , supplier.supplier_name , quantity FROM product_sold
 INNER JOIN product ON product_sold.id_product = product.id_product
